@@ -16,6 +16,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.androidmaster.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.slider.RangeSlider
+import java.util.Locale
 
 class ImcCalculatorActivity : AppCompatActivity() {
 
@@ -115,9 +116,8 @@ class ImcCalculatorActivity : AppCompatActivity() {
     }
 
     private fun calculateImc():Double {
-        val df = DecimalFormat("#.##")
-        val imc = currentWeight/(currentHeight.toDouble()/100 * currentHeight.toDouble()/100)
-        return df.format(imc).toDouble()
+        val imc = currentWeight / ((currentHeight / 100.0) * (currentHeight / 100.0))
+        return String.format(Locale.US, "%.2f", imc).toDouble()
     }
 
     private fun setAge() {

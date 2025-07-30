@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidMaster">
         <activity
+            android:name=".todoapp.TodoActivity"
+            android:theme="@style/Theme.TodoApp"
+            android:exported="false" />
+        <activity
             android:name=".imccalculator.ResultImcActivity"
             android:exported="false" />
         <activity
@@ -32,7 +36,7 @@
         <activity
             android:name=".firstapp.FirstAppActivity"
             android:exported="true"
-            android:theme="@style/Theme.AndroidMaster"></activity>
+            android:theme="@style/Theme.AndroidMaster" />
     </application>
 
 </manifest>

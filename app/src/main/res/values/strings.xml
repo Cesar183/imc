@@ -31,4 +31,5 @@
     <!-- TodoApp -->
     <string name="todo_title">Bienvenido</string>
     <string name="todo_categories">Categorías:</string>
+    <string name="todo_task">Tareas:</string>
 </resources>

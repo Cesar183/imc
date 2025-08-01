@@ -12,9 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidMaster">
         <activity
-            android:name=".todoapp.TodoActivity"
-            android:theme="@style/Theme.TodoApp"
+            android:name=".superhero.SuperHeroListActivity"
             android:exported="false" />
+        <activity
+            android:name=".todoapp.TodoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TodoApp" />
         <activity
             android:name=".imccalculator.ResultImcActivity"
             android:exported="false" />
